@@ -3,7 +3,6 @@ from pytube import YouTube
 from pytube.exceptions import VideoUnavailable
 from ffmpy import FFmpeg
 import io
-import pathlib
 
 
 class AgeRestrictedYTVideo:
