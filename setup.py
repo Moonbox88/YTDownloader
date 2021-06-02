@@ -1,30 +1,26 @@
-from setuptools import setup, find_packages
-import codecs
-import os
+from distutils.core import setup
 
-here = os.path.abspath(os.path.dirname(__file__))
-
-with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
-    long_description = "\n" + fh.read()
-
-VERSION = '0.0.1'
+VERSION = '0.1'
 DESCRIPTION = 'YT video stream downloader'
 LONG_DESCRIPTION = 'Package for aquiring binary data for YouTube videos with age restrictions.'
 
 # Setting up
 setup(
-    name="age-YTDownloader",
+    name='YT_vid_DL',
+    packages=['YT_vid_DL'],
     version=VERSION,
-    author="Moonbox88 (Sean Mooney)",
-    author_email="<seanmooney@live.co.uk>",
+    license='MIT',
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
-    long_description=long_description,
-    packages=find_packages(),
+    long_description=LONG_DESCRIPTION,
+    author="Moonbox88 (Sean Mooney)",
+    author_email="<seanmooney@live.co.uk>",
+    url='https://github.com/Moonbox88/YT_Downloader.git',
+    download_url='https://github.com/Moonbox88/YT_vid_DL/archive/refs/tags/v0.1.tar.gz',
     install_requires=['pytube', 'ffmpy'],
     keywords=['python', 'video', 'stream', 'YouTube'],
     classifiers=[
-        "Development Status :: 4 - Beta",
+        "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
         "Operating System :: Unix",
